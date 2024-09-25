@@ -20,28 +20,6 @@ routes: Ini adalah map dari string (nama rute) ke widget yang ditampilkan. Dalam
 '/': Untuk halaman utama (HomePage)
 '/profile': Untuk halaman profile (ProfilePage)
 
-contoh: initialRoute: '/',
-routes: {
-  '/': (context) => HomePage(),
-  '/profile': (context) => ProfilePage(),
-},
-
-
-2. Navigasi Menggunakan Navigator.pushNamed()
-Pada bagian ini, navigasi antar halaman dilakukan menggunakan fungsi Navigator.pushNamed(). Ketika user menekan tombol Profile atau memilih Profile di menu samping, aplikasi akan berpindah ke halaman profile yang sudah didefinisikan di routes.
-
-
-Bagian penting dari kode-kode di atas adalah:
-
-1. MaterialApp dan routes
-Pada bagian ini, aplikasi didefinisikan dengan MaterialApp yang menjadi struktur utama aplikasi Flutter. Properti pentingnya adalah:
-
-initialRoute: Menentukan rute awal yang akan ditampilkan saat aplikasi diluncurkan. Dalam contoh ini, rutenya adalah HomePage.
-routes: Ini adalah map dari string (nama rute) ke widget yang ditampilkan. Dalam kode di atas, ada dua rute:
-'/': Untuk halaman utama (HomePage)
-'/profile': Untuk halaman profile (ProfilePage)
-Bagian Penting: Menggunakan routes memudahkan manajemen navigasi dalam aplikasi, terutama ketika aplikasi memiliki banyak halaman.
-
 2. Navigasi Menggunakan Navigator.pushNamed()
 Pada bagian ini, navigasi antar halaman dilakukan menggunakan fungsi Navigator.pushNamed(). Ketika user menekan tombol Profile atau memilih Profile di menu samping, aplikasi akan berpindah ke halaman profile yang sudah didefinisikan di routes.
 
