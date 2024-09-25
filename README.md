@@ -6,7 +6,7 @@ NIM : H1D021040
 Shift Baru: D
 
 ## Screenshot
-Contoh :
+
 ![Login](login.png)
 ![Home Pagel](homepage.png)
 ![Side Menu](sidemenu.png)
