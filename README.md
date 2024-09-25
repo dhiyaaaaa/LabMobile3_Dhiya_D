@@ -42,20 +42,8 @@ routes: Ini adalah map dari string (nama rute) ke widget yang ditampilkan. Dalam
 '/profile': Untuk halaman profile (ProfilePage)
 Bagian Penting: Menggunakan routes memudahkan manajemen navigasi dalam aplikasi, terutama ketika aplikasi memiliki banyak halaman.
 
-dart
-Copy code
-initialRoute: '/',
-routes: {
-  '/': (context) => HomePage(),
-  '/profile': (context) => ProfilePage(),
-},
 2. Navigasi Menggunakan Navigator.pushNamed()
 Pada bagian ini, navigasi antar halaman dilakukan menggunakan fungsi Navigator.pushNamed(). Ketika user menekan tombol Profile atau memilih Profile di menu samping, aplikasi akan berpindah ke halaman profile yang sudah didefinisikan di routes.
-
-dart
-Copy code
-Navigator.pushNamed(context, '/profile');
-Bagian Penting: Navigasi di Flutter dilakukan dengan menambahkan halaman baru ke dalam "tumpukan" (stack) halaman, yang kemudian dapat di-pop untuk kembali ke halaman sebelumnya.
 
 3. Scaffold dan Struktur Halaman
 Scaffold adalah komponen penting dalam Flutter untuk membangun layout halaman. Komponen-komponen utama yang terdapat di dalam Scaffold ini adalah:
